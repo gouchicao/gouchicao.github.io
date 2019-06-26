@@ -8,6 +8,8 @@ permalink: /about/
 
 主页：[https://www.gouchicao.com/](https://www.gouchicao.com/)
 
+深度学习实践：[http://gouchicao.com/deep-learning-practice/](http://gouchicao.com/deep-learning-practice/)
+
 GitHub：[http://github.com/gouchicao](http://github.com/gouchicao)
 
 DockerHub：[https://cloud.docker.com/u/gouchicao/](https://cloud.docker.com/u/gouchicao/)
