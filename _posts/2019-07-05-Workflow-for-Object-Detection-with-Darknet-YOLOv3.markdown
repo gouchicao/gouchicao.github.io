@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Darknet YOLOv3 Object Detection 解决方案"
+title:  "使用 Darknet YOLOv3 进行 Object Detection 的工作流程"
 date:   2019-07-08 06:59:35 +0800
 categories: [solution]
 tags: [object-detection]
