@@ -43,3 +43,10 @@ $ python3 labelImg.py [IMAGE PATH] [PRE-DEFINED CLASS FILE] [SAVE DIRECTORY]
 [darknet-serving image]: https://cloud.docker.com/u/gouchicao/repository/docker/gouchicao/darknet-serving
 [create_project.py]: https://github.com/gouchicao/darknet/blob/master/create_project.py
 [generate_model_deploy_data.py]: https://github.com/gouchicao/darknet/blob/master/generate_model_deploy_data.py
+
+## 参考资料
+* [labelImg](https://github.com/gouchicao/labelImg)
+* [darknet](https://github.com/gouchicao/darknet)
+* [darknet-serving](https://github.com/gouchicao/darknet-serving)
+* [gouchicao-video](https://github.com/gouchicao/gouchicao-video)
+* [模型动物园](https://github.com/gouchicao/darknet/tree/master/model-zoo)
