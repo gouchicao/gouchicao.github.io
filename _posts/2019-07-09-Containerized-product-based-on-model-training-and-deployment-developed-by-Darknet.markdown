@@ -147,7 +147,7 @@ tags: [object-detection]
     # 部署模型
     $ sudo docker run --runtime=nvidia -it --name=darknet-serving \
         --volume=$model_dir:/model \
-        darknet-serving:latest-gpu
+        gouchicao/darknet-serving:latest-gpu
     ```
 
 ## 压板开关预测效果
