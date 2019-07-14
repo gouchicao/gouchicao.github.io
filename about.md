@@ -12,5 +12,5 @@ permalink: /about/
 
 GitHub：[http://github.com/gouchicao](http://github.com/gouchicao)
 
-DockerHub：[https://cloud.docker.com/u/gouchicao/](https://cloud.docker.com/u/gouchicao/)
+DockerHub：[https://cloud.docker.com/u/gouchicao/](https://hub.docker.com/u/gouchicao/)
 
