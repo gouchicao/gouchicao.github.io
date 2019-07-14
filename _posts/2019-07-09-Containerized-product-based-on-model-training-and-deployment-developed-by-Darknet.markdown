@@ -145,7 +145,7 @@ tags: [object-detection]
     $ model_dir=/home/wjunjian/github/gouchicao/darknet/model-zoo/platen-switch/model
 
     # 部署模型
-    $ sudo docker run --runtime=nvidia -it --name=darknet-serving \
+    $ sudo docker run --runtime=nvidia -it --name=darknet-serving -p 7713:7713 \
         --volume=$model_dir:/model \
         gouchicao/darknet-serving:latest-gpu
     ```
