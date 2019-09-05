@@ -25,13 +25,16 @@ sudo docker pull gouchicao/detectron:latest
 
 ## 运行容器 Detectron，挂载工程目录。
 ``` bash
-sudo docker run -it --runtime=nvidia --name detectron-helmet -v /helmet-project-realpath:/detectron/project gouchicao/detectron:latest
+sudo docker run -it --runtime=nvidia --name detectron-helmet \
+                -v /helmet-project-realpath:/detectron/project \
+                gouchicao/detectron:latest
 ```
 
 ## 修复BBOX_XFORM_CLIP错误
 ``` bash
 nano /detectron/detectron/utils/env.py 
-
+```
+``` txt
 yaml_load = lambda x: yaml.load(x, Loader=yaml.Loader)
 ```
 
@@ -58,7 +61,6 @@ _ANN_FN: '/detectron/project/helmet_val.json'
 ``` bash
 nano /detectron/project/12_2017_baselines/e2e_mask_rcnn_R-101-FPN_2x.yaml
 ```
-
 ``` txt
 MODEL:
   TYPE: generalized_rcnn
@@ -110,10 +112,17 @@ OUTPUT_DIR: .
 
 ## 训练模型
 ``` bash
-python /detectron/tools/train_net.py --cfg /detectron/project/e2e_mask_rcnn_R-101-FPN_2x.yaml OUTPUT_DIR /detectron/project/model
+python /detectron/tools/train_net.py \
+       --cfg /detectron/project/e2e_mask_rcnn_R-101-FPN_2x.yaml \
+       OUTPUT_DIR /detectron/project/model
 ```
 
 ## 测试模型
 ``` bash
-python /detectron/tools/infer_simple.py --cfg /detectron/project/e2e_mask_rcnn_R-101-FPN_2x.yaml --output-dir /detectron/project/predict --image-ext jpg --wts /detectron/project/model/train/coco_helmet_train\:coco_helmet_train/generalized_rcnn/model_final.pkl /detectron/project/test
+python /detectron/tools/infer_simple.py \
+       --cfg /detectron/project/e2e_mask_rcnn_R-101-FPN_2x.yaml \
+       --output-dir /detectron/project/predict \
+       --image-ext jpg \
+       --wts /detectron/project/model/train/coco_helmet_train\:coco_helmet_train/generalized_rcnn/model_final.pkl \
+       /detectron/project/test
 ```
