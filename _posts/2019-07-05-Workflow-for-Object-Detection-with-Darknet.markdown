@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "使用 Darknet 进行 Object Detection 的工作流程"
-date:   2019-07-08 06:59:35 +0800
+title:  "使用Darknet进行Object Detection的工作流程"
+date:   2019-07-05 12:59:35 +0800
 categories: [solution]
 tags: [object-detection]
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "使用Detectron在自定义数据集上训练MaskRCNN"
-date:   2019-09-01 01:00:00 +0800
+date:   2019-09-01 12:00:00 +0800
 categories: [practice]
 tags: [object-detection, detectron, MaskRCNN]
 ---
