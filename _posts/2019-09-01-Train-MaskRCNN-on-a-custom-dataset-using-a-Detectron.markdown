@@ -39,24 +39,27 @@ yaml_load = lambda x: yaml.load(x, Loader=yaml.Loader)
 1. 配置数据集
 ``` bash
 nano /detectron/detectron/datasets/dataset_catalog.py
-
+```
+``` txt
 _DATASETS = {
-    'coco_helmet_train': {
-        _IM_DIR: '/detectron/project/images',
-        _ANN_FN: '/detectron/project/helmet_train.json' 
-    },
-    'coco_helmet_val': {
-        _IM_DIR: '/detectron/project/images',
-        _ANN_FN: '/detectron/project/helmet_val.json' 
-    },
-    ......
+'coco_helmet_train': {
+_IM_DIR: '/detectron/project/images',
+_ANN_FN: '/detectron/project/helmet_train.json' 
+},
+'coco_helmet_val': {
+_IM_DIR: '/detectron/project/images',
+_ANN_FN: '/detectron/project/helmet_val.json' 
+},
+......
 }
 ```
 
 2. 修改网络配置文件
 ``` bash
 nano /detectron/project/12_2017_baselines/e2e_mask_rcnn_R-101-FPN_2x.yaml
+```
 
+``` txt
 MODEL:
   TYPE: generalized_rcnn
   CONV_BODY: FPN.add_fpn_ResNet101_conv5_body
