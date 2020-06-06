@@ -114,7 +114,7 @@ backup = weights
 3行：subdivisions=8
 5行：width=512
 6行：height=512
-# 上面几行的修改主要是为了在GTX1060 6G的显卡上能够运行
+#上面几行的修改主要是为了在GTX1060 6G的显卡上能够运行
 
 19行：max_batches=2000
 
