@@ -160,6 +160,9 @@ cd project
 ## 参考资料
 * [YOLOv4 - Neural Networks for Object Detection](https://github.com/AlexeyAB/darknet)
 * [YOLOv4 pre-release](https://github.com/AlexeyAB/darknet/releases)
+* [YOLOv4](https://medium.com/@jonathan_hui/yolov4-c9901eaa8e61)
+* [A Gentle Introduction to YOLO v4 for Object detection in Ubuntu 20.04](https://robocademy.com/2020/05/01/a-gentle-introduction-to-yolo-v4-for-object-detection-in-ubuntu-20-04/)
+* [如何解决神经网络训练时loss不下降的问题](https://blog.ailemon.me/2019/02/26/solution-to-loss-doesnt-drop-in-nn-train/)
 * [YOLOv4：目标检测（windows和Linux下Darknet 版本）实施](https://www.cnblogs.com/wujianming-110117/p/12940914.html)
 * [windows下训练yolo时出现CUDA Error: out of memory问题的解决](https://blog.csdn.net/qq_33485434/article/details/80432054)
 * [小白train自己的yolo-v4](https://mc.ai/小白train自己的yolo-v4/)
