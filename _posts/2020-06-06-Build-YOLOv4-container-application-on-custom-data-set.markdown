@@ -8,11 +8,12 @@ tags: [object-detection, darknet, yolo]
 
 ## 构建YOLOv4容器
 * 编写Dockerfile
+
 ```dockerfile
 FROM nvidia/cuda:10.0-cudnn7-devel-ubuntu18.04
 LABEL maintainer="wang-junjian@qq.com"
 
-# auto install tzdata(opencv depend)
+#auto install tzdata(opencv depend)
 ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update && apt-get install -y \
@@ -20,7 +21,7 @@ RUN apt-get update && apt-get install -y \
     libopencv-dev python3-opencv \
     && rm -rf /var/lib/apt/lists/*
 
-# set your localtime
+#set your localtime
 RUN ln -fs /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 
 WORKDIR /
@@ -28,10 +29,10 @@ RUN git clone https://github.com/AlexeyAB/darknet.git
 
 WORKDIR /darknet
 
-# pre-trained weights-file for training
+#pre-trained weights-file for training
 RUN wget https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v3_optimal/yolov4.conv.137
 
-# build darknet for GPU
+#build darknet for GPU
 RUN make GPU=1 CUDNN=1 CUDNN_HALF=1 OPENCV=1 LIBSO=1 && rm -rf obj
 
 EXPOSE 8090
@@ -127,17 +128,17 @@ backup = weights
 
 * 使用LabelImg标注图像样本集
 ```bash
-# python3 labelImg.py [图像目录] [标注名字文件] [标注目录]
+#python3 labelImg.py [图像目录] [标注名字文件] [标注目录]
 python3 labelImg.py project/yolos/ project/cfg/yolo.names
 ```
 
 ## 在容器中运行YOLOv4
 ```bash
-# 设置工程目录的环境变量
+#设置工程目录的环境变量
 project_dir=""
 docker run --runtime=nvidia -it --name=darknet-yolov4 --volume=$project_dir:/darknet/project -p 8090:8090 darknet:latest-gpu-yolov4
 
-# 使用本机的时区替换容器内的时区
+#使用本机的时区替换容器内的时区
 docker run --runtime=nvidia -it --name=darknet-yolov4 --volume=/etc/localtime:/etc/localtime:ro　--volume=$project_dir:/darknet/project -p 8090:8090 darknet:latest-gpu-yolov4
 ```
 
