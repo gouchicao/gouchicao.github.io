@@ -109,7 +109,8 @@ backup = weights
 ```
 
 * 修改YOLO神经网络文件：yolov4.cfg
-```txt
+
+```yaml
 2行：batch=8
 3行：subdivisions=8
 5行：width=512
@@ -118,7 +119,7 @@ backup = weights
 
 19行：max_batches=2000
 
-961行：filters=21    # (classes + 5)*3
+961行：filters=21    #(classes + 5)*3
 968行：classes=2
 1049行：filters=21
 1056行：classes=2
