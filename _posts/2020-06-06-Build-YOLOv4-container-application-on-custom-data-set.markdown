@@ -161,6 +161,8 @@ cd project
 * [YOLOv4 - Neural Networks for Object Detection](https://github.com/AlexeyAB/darknet)
 * [YOLOv4 pre-release](https://github.com/AlexeyAB/darknet/releases)
 * [YOLOv4](https://medium.com/@jonathan_hui/yolov4-c9901eaa8e61)
+* [YOLOv4-Darknet-Roboflow](https://colab.research.google.com/drive/1mzL6WyY9BRx4xX476eQdhKDnd_eixBlG)
+* [YOLOv4重磅发布，五大改进，二十多项技巧实验，堪称最强目标检测万花筒(附论文+代码下载）](https://aijishu.com/a/1060000000109128)
 * [A Gentle Introduction to YOLO v4 for Object detection in Ubuntu 20.04](https://robocademy.com/2020/05/01/a-gentle-introduction-to-yolo-v4-for-object-detection-in-ubuntu-20-04/)
 * [如何解决神经网络训练时loss不下降的问题](https://blog.ailemon.me/2019/02/26/solution-to-loss-doesnt-drop-in-nn-train/)
 * [YOLOv4：目标检测（windows和Linux下Darknet 版本）实施](https://www.cnblogs.com/wujianming-110117/p/12940914.html)
