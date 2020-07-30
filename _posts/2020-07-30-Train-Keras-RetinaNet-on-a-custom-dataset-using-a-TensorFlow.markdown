@@ -67,7 +67,6 @@ project
 ```bash
 $ python keras-retinanet/keras_retinanet/bin/train.py --tensorboard-dir=project/logs --snapshot-path project/snapshots \
     csv project/dataset/train.csv project/dataset/class.csv --val-annotations project/dataset/val.csv
-
 $ ll -h project/models/resnet50_csv_01.h5
 -rw-r--r-- 1 root     root     417M 7月  27 22:58 resnet50_csv_01.h5
 ```
@@ -90,7 +89,6 @@ $ python keras-retinanet/keras_retinanet/bin/evaluate.py csv project/dataset/val
 $ mkdir project/inference
 $ python keras-retinanet/keras_retinanet/bin/convert_model.py --no-class-specific-filter \
     project/snapshots/resnet50_csv_01.h5 project/inference/model.h5
-
 $ ll -h project/inference/model.h5
 -rw-r--r-- 1 root     root     140M 7月  27 23:14 model.h5
 ```
